@@ -5,19 +5,20 @@ var timerEl = document.getElementById('countdown');
 //timer
 
 function countdown() {
-    var timeLeft = 5;
+    var timeLeft = 60;
 
-var timeInterval = setInterval(function () {
-    timeLeft--;
-    timerEl.textContent = timeLeft + " seconds remaining ";
+    var timeInterval = setInterval(function () {
+        timeLeft--;
+        timerEl.textContent = timeLeft + " seconds remaining ";
 
-    if (timeLeft === 0) {
-      clearInterval(timeInterval);
+        if (timeLeft === 0) {
+            clearInterval(timeInterval);
 
-      displayMessage();
-    }
+            displayMessage();
+        }
 
+    
   }, 1000);
-
-  countdown();
+}
+countdown();
 // creating questions
