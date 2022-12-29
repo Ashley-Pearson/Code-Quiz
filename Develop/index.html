@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+
+    <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
-  <!-- Div to hold our link to high scores -->
+    <!-- Div to hold our link to high scores -->
+    <div class="scores"></div><a href="scores.html"> View Scores</a></div>
 
-  <!-- Div to hold our timer -->
+    <!-- Div to hold our timer -->
+    <div id="timer"></div>
 
-  <!-- Wrapper div to hold the rest of the content on our screen -->
-
-    <!-- Div for the start screen -->
-
+    <!-- Wrapper div to hold the rest of the content on our screen -->
+    <div id="container">
+        <h1> Code Quiz</h1>
+        <p>Test your coding knowledge by answering the following code related questions before the timer runs out! Any
+            incorrect answers will penalize your time and score by 10 seconds. </p>
+        <!-- Div for the start screen -->
+        <button id="start">Start the Quiz</button>
+    </div>
     <!-- Div for the questions -->
+    <div id="questionsBox"></div>
 
     <!-- Div for the end screen -->
+    <div id="resultsBox"></div>
 
     <!-- Div to dynamically display feedback to the user -->
+    <div id="feedbackBox"></div>
+
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
