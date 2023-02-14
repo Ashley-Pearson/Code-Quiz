@@ -1,11 +1,12 @@
 //varibles for quiz
 var timerEl = document.getElementById('countdown');
+var startButton = document.querySelector(".start-quiz")
 // start quiz
 
 //timer
 
 function countdown() {
-    var timeLeft = 60;
+    var timeLeft = 30;
 
     var timeInterval = setInterval(function () {
         timeLeft--;
@@ -21,4 +22,5 @@ function countdown() {
   }, 1000);
 }
 countdown();
+startButton.addEventListener("click", startQuiz);
 // creating questions
